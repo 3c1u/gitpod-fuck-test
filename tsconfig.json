@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "target": "es2020",
+    "module": "esnext",
+    "lib": ["esnext"],
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noImplicitReturns": true,
+    "moduleResolution": "node",
+    "jsx": "react",
+    "baseUrl": "./",
+    "paths": {
+      "~*": ["./src/*"]
+    },
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "outDir": "dist",
+    "typeRoots": ["./node_modules/@types"]
+  },
+  "include": ["src/**/*"]
+}
