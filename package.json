@@ -6,25 +6,25 @@
   "author": "Hikaru Terazono (3c1u) <3c1u@tohkani.com>",
   "license": "MIT",
   "scripts": {
-    "build": "rollup -c --environment NODE_ENV:production",
-    "build:dev": "rollup -c  --environment NODE_ENV:development",
+    "build": "webpack --mode production",
+    "build:dev": "webpack --mode development",
     "watch": "yarn build:dev --watch",
     "exec:hello": "./bin/hello"
   },
   "devDependencies": {
-    "@rollup/plugin-commonjs": "^17.1.0",
-    "@rollup/plugin-json": "^4.1.0",
-    "@rollup/plugin-node-resolve": "^11.2.0",
-    "@rollup/plugin-typescript": "^8.2.0",
     "@types/node": "^14.14.34",
     "@types/react": "^17.0.3",
     "bufferutil": "^4.0.3",
     "ink": "^3.0.8",
     "ink-text-input": "^4.0.1",
+    "json-loader": "^0.5.7",
     "react": "^17.0.2",
     "rollup": "^2.42.4",
+    "ts-loader": "^8.0.17",
     "tslib": "^2.1.0",
     "typescript": "^4.2.3",
-    "utf-8-validate": "^5.0.4"
+    "utf-8-validate": "^5.0.4",
+    "webpack": "^5.24.4",
+    "webpack-cli": "^4.5.0"
   }
 }
